@@ -1,70 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hayat Muhammed Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<header class="hero">
-    <h1>Your Name</h1>
-    <p>Full Stack Developer | Java | React | Backend Systems</p>
-<p>
-I am a Full Stack Developer focused on backend systems using Java and building real-world applications.
-I enjoy designing scalable systems and currently specialize in Java, RMI, and web technologies.
-I am actively seeking internship opportunities to grow as a software engineer.
-</p>
-    <div class="buttons">
-        <a href="https://github.com/" target="_blank">GitHub</a>
-        <a href="mailto:youremail@gmail.com">Contact</a>
+<!-- NAVBAR -->
+<nav>
+    <h2>Hayat</h2>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    <h1>Hayat Muhammed</h1>
+    <p>Full Stack Developer | Backend Developer</p>
+
+    <div class="hero-buttons">
+        <a href="https://github.com/hayatmuhammed2024-design" target="_blank" class="btn">GitHub</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
     </div>
-</header>
+</section>
 
 <!-- ABOUT -->
-<section class="about">
+<section id="about" class="section hidden">
     <h2>About Me</h2>
     <p>
-        I am a Full Stack Developer focused on backend systems,
-        Java development, and building real-world applications.
-        I am currently seeking internship opportunities.
+        I am a passionate Full Stack Developer with a strong focus on backend development
+        and system design. I enjoy building real-world applications using Java, C++, and modern
+        web technologies. I continuously improve my skills by developing scalable systems and
+        solving complex problems. I am currently seeking internship opportunities to apply my
+        knowledge in a professional environment.
     </p>
 </section>
 
 <!-- SKILLS -->
-<section class="skills">
+<section id="skills" class="section hidden">
     <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>RMI / Distributed Systems</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>SQL</li>
-        <li>Git & GitHub</li>
-    </ul>
+    <div class="grid">
+        <div class="card">Java</div>
+        <div class="card">C++</div>
+        <div class="card">SQL</div>
+        <div class="card">HTML / CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">React</div>
+        <div class="card">Node.js</div>
+        <div class="card">Git</div>
+        <div class="card">PHP</div>
+        <div class="card">Python</div>
+    </div>
 </section>
 
 <!-- PROJECTS -->
-<div class="project">
-    <h3>RMI Banking System ⭐</h3>
-    <p>
-        A distributed banking system built using Java RMI.
-        It supports client-server communication for banking operations
-        such as deposit, withdraw, and account management.
-    </p>
+<section id="projects" class="section hidden">
+    <h2>Projects</h2>
 
-    <p><b>Tech:</b> Java, RMI, OOP</p>
+    <div class="grid">
 
-    <a href="#">GitHub Repository</a>
-</div>
+        <div class="card project">
+            <h3>RMI Banking System ⭐</h3>
+            <p>
+                A distributed banking application developed using Java RMI that enables secure
+                client-server communication. The system supports core banking operations such as
+                deposit, withdrawal, and fund transfer while maintaining data consistency.
+            </p>
+        </div>
 
-<!-- CONTACT -->
-<section class="contact">
-    <h2>Contact</h2>
-    <p>Email: hayatmuhammed2024@gmail.com</p>
-    <p>GitHub: github.com/hayatmuhammed2024-design</p>
-    <p>LinkedIn: linkedin.com/in/yourname</p>
+        <div class="card project">
+            <h3>Hospital Management System</h3>
+            <p>
+                A comprehensive hospital system built with C++ that simulates real hospital workflows.
+                It includes role-based access (Admin, Doctor, Patient), patient record management,
+                appointment scheduling, prescription tracking, and queue management using data structures.
+            </p>
+        </div>
+
+        <div class="card project">
+            <h3>Student Management System</h3>
+            <p>
+                A C++ application designed to manage student information efficiently.
+                Features include GPA calculation, student record management, searching,
+                sorting, and administrative control over academic data.
+            </p>
+        </div>
+
+        <div class="card project">
+            <h3>Smart Parking System (Java)</h3>
+            <p>
+                A Java-based system implementing object-oriented programming concepts and exception handling.
+                It manages parking slots, calculates billing, handles user validation, and ensures smooth
+                vehicle tracking and operations.
+            </p>
+        </div>
+
+        <div class="card project">
+            <h3>Good Hands Charity System ❤️</h3>
+            <p>
+                A system designed to manage charitable activities by connecting donors with beneficiaries.
+                It ensures transparency through donation tracking, record management, and user-friendly
+                interfaces for both donors and administrators.
+            </p>
+        </div>
+
+    </div>
 </section>
 
+<!-- CONTACT -->
+<section id="contact" class="section hidden">
+    <h2>Contact</h2>
+    <p>Email: hayatmuhammed2024@gmail.com</p>
+    <p>GitHub: https://github.com/hayatmuhammed2024-design</p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
